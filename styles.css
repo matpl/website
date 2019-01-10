@@ -73,3 +73,24 @@ body {
 .header a:hover {
   border-bottom: 3px solid var(--theme-border-color);
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    color: white;
+    font-family: Roboto;
+    width:75%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    width:50%;
+    height: 75px;
+    margin: 0 auto;
+    padding: 128px 0;
+}
