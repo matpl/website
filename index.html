@@ -1,160 +1,27 @@
 <html>
-<head>
-<link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-  <style>
-  
-  :root {
-    --neon-color: #228DFF;
-    --theme-border-color: #21e6c1; /* #f4656d */
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    /*background-color: #152a38;
-    background-color: #0b0c10;
-    background-color: #101B24;*/
-    background-color: #080b22;
-	margin: 0;
-  }
-  
-  .header {
-  /*color: #83fff5;*/
-	width: 100%;
-	height: 30px;
-	margin-top: 20px;
-	position: absolute;
-	display: flex;
-    justify-content: flex-end;
-    z-index: 10;
-  }
-  
-  .banner {
-	width: 100%;
-	/*height:600px;*/
-	height: 100vh;
-	display: block;
-	margin: 0 auto;
-
-  /*background-image: url("Montreal_Twilight_Panorama_2006.jpg");*/
-  
-  /*background-image: url("qc_2009-small.jpg");
-  background-position: 0 -150px;*/
-
-  background-image: url("quebec.jpg");
-  background-position: 0 -100px;
-
-  background-attachment: fixed;
-  
-  /*background-image: url("mtl.jpg");*/
-  /*background-image: url("qc.jpg");
-  background-position: 0 -100px;*/
-
-  background-size: cover;
-  
-  /*background-image: url("boat-animated.gif");
-  background-repeat: no-repeat;*/
-  /*background-size: 1920px 1080px;*/
-  }
-  
-  .banner-overlay {
-    position: absolute;
-	/*height:600px;*/
-	height: 100vh;
-	width: 100%;
-	background-color: black;
-	opacity: 0.3;
-  }
-
-  .banner-text {
-    color:white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 58px;
-  font-weight: bold;
-  background-color: #00000077;
-  padding: 6px;
-  border-bottom: 3px solid var(--theme-border-color);
-  }
-  
-  .header a {
-	display: inline-block;
-	text-align: center;
-	width: 100px;
-    color: #fff;
-	font-family: Roboto;
-    text-decoration-line: none;
-  }
-  
-  .header a.selected {
-	/*border-bottom: 3px solid #21e6c1;*/
-    border-bottom: 3px solid var(--theme-border-color);
-  }
-  
-  .header a:hover {
-    border-bottom: 3px solid var(--theme-border-color);
-  }
-  
-  /*.stuff {
-  color: #fff;
-  font-family: Monoton;
-  font-size: 3em;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}*/
-
-  
-  @-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--neon-color), 0 0 70px var(--neon-color), 0 0 80px var(--neon-color), 0 0 100px var(--neon-color), 0 0 150px var(--neon-color);
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--neon-color), 0 0 35px var(--neon-color), 0 0 40px var(--neon-color), 0 0 50px var(--neon-color), 0 0 75px var(--neon-color);
-  }
-
-  @-moz-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--neon-color), 0 0 70px var(--neon-color), 0 0 80px var(--neon-color), 0 0 100px var(--neon-color), 0 0 150px var(--neon-color);
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--neon-color), 0 0 35px var(--neon-color), 0 0 40px var(--neon-color), 0 0 50px var(--neon-color), 0 0 75px var(--neon-color);
-  }
-}
-
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--neon-color), 0 0 70px var(--neon-color), 0 0 80px var(--neon-color), 0 0 100px var(--neon-color), 0 0 150px var(--neon-color);
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px var(--neon-color), 0 0 35px var(--neon-color), 0 0 40px var(--neon-color), 0 0 50px var(--neon-color), 0 0 75px var(--neon-color);
-  }
-}
-  
- 
-  </style>
-</head>
-<body>
-<div class="header">
-	<a href="#home">Home</a>
-	<a href="#about" style="margin-right: 0px;">About</a>
-</div>
-<div style="height: 100%; width: 100%;">
-	<div class="stuff" style="text-align: center;">
-		<div class="banner">
-			<div class="banner-overlay"></div>
-			<p style="padding-top:250px;position: relative;z-index: 5;">
-				  <span class="banner-text">Hey, it's nice to see you here...</span>
-			</p>
-		</div>
-  </div>
-  <div style="position:relative;height:1500px;">
-    <p id="about" style="position:absolute;bottom:0px;color:white;">animated scroll</p>
-  </div>
-</div>
-</body>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+	    <a href="#home">Home</a>
+	    <a href="#about">About</a>
+    </div>
+    <div>
+	    <div>
+		    <div class="banner">
+		  	  <div class="banner-overlay"></div>
+          <div class="banner-content">
+				    <span>Hey, it's nice to see you here...</span>
+          </div>
+		    </div>
+      </div>
+      <div style="position:relative;height:1500px;">
+        <p id="about" style="position:absolute;bottom:0px;color:white;">animated scroll</p>
+      </div>
+    </div>
+  </body>
 </html>
