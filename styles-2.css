@@ -1,5 +1,5 @@
 :root {
-  --theme-border-color: #f4656d; /* #21e6c1 #007acc */
+  --theme-border-color: rgb(8, 193, 184); /* #21e6c1 #007acc #f4656d */
 }
  
 html {
@@ -7,7 +7,7 @@ html {
 }
  
 body {
-  background-color: #1c1e23;
+  background-color: white /* #1c1e23 */;
   margin: 0;
 }
  
@@ -26,7 +26,7 @@ body {
   height: 100vh;
   display: block;
   margin: 0 auto;
-  background-image: url("quebec-2.jpg");
+  background-image: url("quebec-4.jpg");
   background-position: 0 -100px;
   background-attachment: fixed;
   background-size: cover;
@@ -41,24 +41,34 @@ body {
 }
 
 .banner-content {
-  padding-top: 250px;
+  padding-top: 33vh;
   position: relative;
   z-index: 5;
-  text-align: center;
 }
 
-.banner-content span {
+.banner-content div {
   color:white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 58px;
+  /* opacity: 0.5; */
+  
+  /*padding: 60px 60px 20px 60px;*/
+  
+  position: relative;
+  left: 80px;
+  width: 75vw;
+}
+
+.title {
+  font-family: 'Passion One', sans-serif;
+  font-size: 100px;
+}
+
+.subtitle {
+  font-family: Roboto;
+  font-size: 25px;
   font-weight: bold;
-  background-color: var(--theme-border-color);
-  padding: 60px;
-  display:inline-block;
-  height:650px;
 }
  
- .header a {
+.header a {
   display: inline-block;
   text-align: center;
   width: 100px;
@@ -94,4 +104,12 @@ body {
     height: 75px;
     margin: 0 auto;
     padding: 128px 0;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.white {
+  color: black;
 }
